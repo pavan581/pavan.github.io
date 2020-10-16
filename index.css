@@ -2,6 +2,11 @@ body{
     padding: 0%;
     margin: 0%;
 }
+#dp img{
+    border-radius: 50%;
+    max-width: 150px;
+    max-height: 150px;
+}
 header{
     padding: 4%;
     color: #ffffff;
@@ -9,8 +14,24 @@ header{
     max-height: auto;
     background-color: #003844;
 }
+#bio{
+    margin: 10px;
+}
+#links{
+    margin: 10px;
+    padding: 5px;
+}
 #links img{
     margin: 5px;
     max-width: 30px;
     max-height: 30px;
+}
+#links img:hover{
+    max-width: 35px;
+    max-height: 35px;
+}
+#medium-widget{
+    margin: 85px;
+    padding: 10px;
+    max-width: 70%;
 }
