@@ -11,11 +11,13 @@
 
         <link rel="stylesheet" href="index.css">
         <link rel="icon" href="https://pavan581.github.io/src/me.png">
+
+        
     </head>
     <body>
         <header>
             <div id="headerCenter">
-                <div id="dp"><img src="https://pavan581.github.io/src/me.png" style="max-width: 100px; max-height: 100px;"></div>
+                <div id="dp"><img src="https://pavan581.github.io/src/dp.png"></div>
                 <div><h1>Golakoti G V P Sai Ram</h1></div>
             </div>
             <div id="bio">
@@ -23,14 +25,28 @@
                 <div>Bagalore</div>
             </div>
             <div id="links">
-                <a href="https://www.github.com/pavan581/"><img src="https://pavan581.github.io/src/githubIco.svg"></a>
                 <a href="mailto:sairam.g581@gmail.com"><img src="https://pavan581.github.io/src/gmailIco.svg"></a>
                 <a href="https://twitter.com/pavan_581"><img src="https://pavan581.github.io/src/twitterIco.svg"></a>
+                <a href="https://www.github.com/pavan581/"><img src="https://pavan581.github.io/src/githubIco.svg"></a>
                 <a href="https://medium.com/@pavan581"><img src="https://pavan581.github.io/src/mediumIco.svg"></a>
                 <a href="https://www.linkedin.com/in/golakoti-g-v-p-sai-ram-86819b195/"><img src="https://pavan581.github.io/src/linkedinIco.svg"></a>
             </div>
         </header>
-
-
+        <div>
+            <div id="medium-widget"></div>
+            <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+            <script>
+                MediumWidget.Init({
+                    renderTo: '#medium-widget', 
+                    params: {
+                        "resource":"https://medium.com/@pavan581",
+                        "postsPerLine":2,
+                        "limit":4,
+                        "picture":"big",
+                        "fields":["description","author","claps","publishAt"],
+                        "ratio":"landscape"
+                }})
+            </script>
+        </div>
     </body>
 </html>
