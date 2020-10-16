@@ -1,12 +1,16 @@
-#pageHeader{
-    position: fixed;
+body{
+    padding: 0%;
+    margin: 0%;
+}
+header{
+    padding: 4%;
     color: #ffffff;
+    text-align: center;
+    max-height: auto;
     background-color: #003844;
 }
-/* #rightHeader div{
-    align-items: center;
-} */
-img{
+#links img{
+    margin: 5px;
     max-width: 30px;
     max-height: 30px;
 }
