@@ -94,51 +94,6 @@ strong {
 }
 
 
-/* BUTTON */
-
-.custom-btn {
-  background: transparent;
-  border-radius: var(--border-radius-small);
-  padding: 14px 24px;
-  color: var(--white-color);
-  font-size: var(--menu-font-size);
-  font-weight: var(--font-weight-normal);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  white-space: nowrap;
-  transition: all 0.3s ease;
-}
-
-.custom-btn:hover {
-  color: var(--primary-color);
-}
-
-.custom-btn:focus {
-  box-shadow: none;
-}
-
-.custom-btn.bordered:hover,
-.custom-btn.bordered:focus,
-
-.custom-btn.bg-color:hover,
-.custom-btn.bg-color:focus {
-  background: var(--white-color);
-  border-color: transparent;
-  color: var(--primary-color);
-}
-
-.bordered {
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
-}
-
-.bg-color {
-  background: var(--primary-color);
-  color: var(--white-color);
-}
-
-
-
 /*---------------------------------------
    GENERAL               
 -----------------------------------------*/
@@ -171,20 +126,6 @@ a:focus {
   text-decoration: none;
 }
 
-
-/* BG OVERLAY */
-
-.bg-overlay {
-  background: var(--dark-color);
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.85;
-}
 
 /*---------------------------------------
    MENU             
@@ -292,6 +233,14 @@ a:focus {
   top: 8px;
 }
 
+.medium-posts {
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  min-height: 100vh;
+  position: relative;
+}
 
 
 /*---------------------------------------
@@ -343,10 +292,23 @@ a:focus {
   text-align: center;
 }
 
-.social-icon li a:hover {
-  color: var(--primary-color);
-}
 
+
+.social-icon .fa-github:hover{
+  color: #f13a11;
+}
+.social-icon .fa-twitter:hover{
+  color: #1DA1F2
+}
+.social-icon .fa-medium:hover{
+  color: #00ab6c
+}
+.social-icon .fa-linkedin:hover{
+  color: #0077b5
+}
+.social-icon .fa-envelope:hover{
+  color: #D44638
+}
 
 /*---------------------------------------
    RESPONSIVE STYLES              
@@ -391,4 +353,14 @@ a:focus {
     margin: 15%;
     padding: 10px;
     max-width: 70%;
+}
+
+.connect-list{
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+.connect-list li{
+  display: list-item;
+  white-space: nowwrap;
 }
