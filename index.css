@@ -1,19 +1,25 @@
 :root {
-  --primary-color:        #f13a11;
-  --white-color:          #ffffff;
-  --dark-color:           #191A1c;
-  --navbar-dark:          #202824;
+  --primary-color:        #A9C398 ;
+  /* --navbar-dark:          #202824; */
+  --navbar-dark:          #022F40;
   --background-dark:      #191A1C;
+  --white-color:          #ffffff;
 
-  --gray-color:           #909090;
   --link-color:           #404040;
-  --p-color:              #666262;
+  --p-color:              #daceced8;
 
   --base-font-family:     'Plain', sans-serif;
   --font-weight-bold:     bold;
   --font-weight-normal:   normal;
   --font-weight-light:    300;
   --font-weight-thin:     100;
+  
+  --h1-color:             #DBEEDF;
+  --h2-color:             #D6E9DB;
+  --h3-color:             #D2E5D6;
+  --h4-color:             #CDE0D2;
+  --h5-color:             #C9DBCD;
+  --h6-color:             #B3C2B6;
 
   --h1-font-size:         48px;
   --h2-font-size:         36px;
@@ -27,20 +33,26 @@
 
   --border-radius-large:  100%;
   --border-radius-small:  2px;
-}
 
+  --github:   #AD5C51;
+  --twitter:  #1DA1F2;
+  --medium:   #00ab6c;
+  --linkedin: #0077b5;
+  --envelope: #B23121;
+}
 
 body {
-  background-color: var(--background-dark);
+  background-color: var(--background-dark) !important;
   font-family: var(--base-font-family);
 }
-/* 
+
 h1,h2,h3,h4,h5,h6 {
   font-weight: var(--font-weight-thin);
   line-height: normal;
 }
 
 h1 {
+  color: var(--h1-color);
   font-size: var(--h1-font-size);
   font-weight: var(--font-weight-bold);
   letter-spacing: -1px;
@@ -49,12 +61,14 @@ h1 {
 }
 
 h2 {
+  color: var(--h2-color);
   font-size: var(--h2-font-size);
   font-weight: var(--font-weight-bold);
   letter-spacing: -2px;
 }
 
 h3 {
+  color: var(--h3-color);
   font-size: var(--h3-font-size);
   font-weight: var(--font-weight-bold);
   letter-spacing: -1px;
@@ -62,15 +76,17 @@ h3 {
 }
 
 h4 {
+  color: var(--h4-color);
   font-size: var(--h4-font-size);
 }
 
 h5 {
+  color: var(--h5-color);
   font-size: var(--h5-font-size);
 }
 
 h6 {
-  color: var(--gray-color);
+  color: var(--h6-color);
   font-size: var(--h6-font-size);
   line-height: inherit;
   margin: 0;
@@ -87,7 +103,7 @@ b,
 strong {
   font-weight: var(--font-weight-bold);
   letter-spacing: 0;
-} */
+}
 
 .section {
   padding: 7rem 0;
@@ -148,6 +164,10 @@ a:focus {
   line-height: normal;
   text-transform: uppercase;
   padding-top: 0;
+}
+.navbar .navbar-brand:hover{
+  color: var(--white-color);
+  text-decoration: ;
 }
 
 .nav-item .nav-link {
@@ -233,6 +253,9 @@ a:focus {
   top: 8px;
 }
 
+/*---------------------------------------
+   MEDIUM POSTS              
+-----------------------------------------*/
 .medium-posts {
   background-size: cover;
   background-position: top;
@@ -241,7 +264,25 @@ a:focus {
   min-height: 100vh;
   position: relative;
 }
+.medium-widget-article__title{
+  color: var(--h3-color) !important;
+}
+.medium-widget-article__author-name{
+  color: var(--h5-color) !important;
+}
+.medium-widget-article__clap:before{
+  color: var(--h6-color) !important;
+}
+.medium-widget-article__date{
+  color: var(--h6-color) !important;
+}
 
+.connect .list-group-item{
+  background-color: var(--background-dark);
+}
+.connect .list-group-item:hover{
+  background-color: #1c1d1f;
+}
 
 /*---------------------------------------
    FOOTER              
@@ -292,22 +333,20 @@ a:focus {
   text-align: center;
 }
 
-
-
-.social-icon .fa-github:hover{
-  color: #f13a11;
+.social-icon #github:hover{
+  color: var(--github);
 }
-.social-icon .fa-twitter:hover{
-  color: #1DA1F2
+.social-icon #twitter:hover{
+  color: var(--twitter);
 }
-.social-icon .fa-medium:hover{
-  color: #00ab6c
+.social-icon #medium:hover{
+  color: var(--medium);
 }
-.social-icon .fa-linkedin:hover{
-  color: #0077b5
+.social-icon #linkedin:hover{
+  color: var(--linkedin);
 }
-.social-icon .fa-envelope:hover{
-  color: #D44638
+.social-icon #envelope:hover{
+  color: var(--envelope);
 }
 
 /*---------------------------------------
@@ -347,20 +386,4 @@ a:focus {
   .contact h2 span {
     display: block;
   }
-}
-
-#medium-widget{
-    margin: 15%;
-    padding: 10px;
-    max-width: 70%;
-}
-
-.connect-list{
-  display: block;
-  position: relative;
-  z-index: 10;
-}
-.connect-list li{
-  display: list-item;
-  white-space: nowwrap;
 }

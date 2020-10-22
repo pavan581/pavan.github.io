@@ -48,11 +48,11 @@
                     </ul>
     
                     <ul class="social-icon ml-lg-3">
-                        <li><a href="https://github.com/pavan581" class="fa fa-github" target="_blank"></a></li>
-                        <li><a href="https://twitter.com/pavan_581" class="fa fa-twitter" target="_blank"></a></li>
-                        <li><a href="https://medium.com/@pavan581" class="fa fa-medium" target="_blank"></a></li>
-                        <li><a href="https://www.linkedin.com/in/golakoti-g-v-p-sai-ram-86819b195/" class="fa fa-linkedin" target="_blank"></a></li>
-                        <li><a href="mailto:sairam.g581@gmail.com" class="fa fa-envelope" target="_blank"></a></li>
+                        <li><a href="https://github.com/pavan581" class="fa fa-github" id="github" target="_blank"></a></li>
+                        <li><a href="https://twitter.com/pavan_581" class="fa fa-twitter" id="twitter" target="_blank"></a></li>
+                        <li><a href="https://medium.com/@pavan581" class="fa fa-medium" id="medium" target="_blank"></a></li>
+                        <li><a href="https://www.linkedin.com/in/golakoti-g-v-p-sai-ram-86819b195/" class="fa fa-linkedin" id="linkedin" target="_blank"></a></li>
+                        <li><a href="mailto:sairam.g581@gmail.com" class="fa fa-envelope" id="envelope" target="_blank"></a></li>
                     </ul>
                 </div>
     
@@ -67,7 +67,7 @@
 
                          <div class="col-lg-8 col-md-10 mx-auto col-12" data-aos="fade-in" data-aos-delay="300">
                             <div>
-                                <div id="medium-widget" data-aos="fade-up" data-aos-delay="500"></div>
+                                <div id="medium-widget" data-aos="fade-up" data-aos-delay="750"></div>
                                 <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
                                 <script>
                                     MediumWidget.Init({
@@ -77,9 +77,9 @@
                                             "postsPerLine":2,
                                             "limit":4,
                                             "picture":"big",
-                                            "fields":["description","author","claps","publishAt"],
+                                            "fields":["author","claps","publishAt"],
                                             "ratio":"landscape"
-                                    }})
+                                        }})
                                 </script>
                             </div>
                         </div>
@@ -117,31 +117,31 @@
                             <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Connect with me at...</h2>
 
                             <div class="list-group social-icon">
-                                <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="https://github.com/pavan581" data-aos="fade-up" data-aos-delay="400" target="_blank">
-                                    <div class="mx-auto">
+                                <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="mailto:sairam.g581@gmail.com" data-aos="fade-up" data-aos-delay="400" target="_blank">
+                                    <div class="mx-auto envelope">
                                         <h4>
-                                            <i class="fa fa-github"><span class="ml-5">Github</span></i>
+                                            <i class="fa fa-envelope" id="envelope"><span class="ml-5">Mail</span></i>
                                         </h4>
                                     </div>
                                 </a>
-                                <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="https://twitter.com/pavan_581" data-aos="fade-up" data-aos-delay="450" target="_blank">
+                                <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="https://github.com/pavan581" data-aos="fade-up" data-aos-delay="450" target="_blank">
                                     <div class="mx-auto">
                                         <h4>
-                                            <i class="fa fa-twitter"><span class="ml-5">Twitter</span></i>
+                                            <i class="fa fa-github" id="github"><span class="ml-5">Github</span></i>
                                         </h4>
                                     </div>
                                 </a>
-                                <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="https://www.linkedin.com/in/golakoti-g-v-p-sai-ram-86819b195/" data-aos="fade-up" data-aos-delay="500" target="_blank">
+                                <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="https://twitter.com/pavan_581" data-aos="fade-up" data-aos-delay="500" target="_blank">
                                     <div class="mx-auto">
                                         <h4>
-                                            <i class="fa fa-linkedin"><span class="ml-5">LinkedIn</span></i>
+                                            <i class="fa fa-twitter" id="twitter"><span class="ml-5">Twitter</span></i>
                                         </h4>
                                     </div>
                                 </a>
-                                <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="mailto:sairam.g581@gmail.com" data-aos="fade-up" data-aos-delay="550" target="_blank">
+                                <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="https://www.linkedin.com/in/golakoti-g-v-p-sai-ram-86819b195/" data-aos="fade-up" data-aos-delay="550" target="_blank">
                                     <div class="mx-auto">
                                         <h4>
-                                            <i class="fa fa-envelope"><span class="ml-5">Mail</span></i>
+                                            <i class="fa fa-linkedin" id="linkedin"><span class="ml-5">LinkedIn</span></i>
                                         </h4>
                                     </div>
                                 </a>
@@ -153,9 +153,7 @@
 
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
+        <script>AOS.init();</script>
         
     </body>
 </html>
