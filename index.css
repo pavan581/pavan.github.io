@@ -266,7 +266,7 @@ a:focus {
 .medium-widget-article__author-name{
   color: var(--h5-color) !important;
 }
-.medium-widget-article__clap:before{
+.medium-widget-article__clap{
   color: var(--h6-color) !important;
 }
 .medium-widget-article__date{
